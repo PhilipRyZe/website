@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url('background5komp.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    padding: 2em;
+    margin-left: 65px;
+    margin-top: 150px;
+    color: white;
+}
+
+section {
+    margin-bottom: 10em;
+}
+
+.header {
+    height: 109px;
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.sidebar {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    height: 100%;
+    padding-top: 100px;
+    background: transparent;
+}
+
+.social-icons {
+    padding: 0 0 0 25px;
+}
+
+.social-icons a:hover {
+   color: yellow;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 200px;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+.button {
+    background-color: #d2d2d2;
+    width: 200px;
+    height: 100px;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+
+.button::before {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    width: 90px;
+    height: 90px;
+    border-radius: 200px;
+    margin: 5px;
+    transition: 0.2s;
+}
+
+input:checked + .button {
+    background-color: yellow;
+}
+
+input:checked + .button::before {
+    transform: translateX(100px);
+}
+
+input {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+input:checked ~ body {
+    background: url('background5komp.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.container input {
+    display: none;
+}
+
+#img1 {
+    align-items: center;
+    justify-content: center;
+}
+
+.bild-mittig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#thumbs {
+    width: 250px;
+	margin: 0 auto;
+    align-items: center;
+    position: relative;
+    justify-content: flex-start;
+}
+
+#thumbsbutton {
+	width: 250px;
+    margin: 5px auto;
+	height: 90px;
+	line-height: 90px;
+	background-color: #444;
+	color: #fbfbfb;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 32px;
+	transition: all 0.3s;
+	border-radius: 20px 20px 20px 20px;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	-moz-border-radius: 20px 20px 20px 20px;
+	-o-border-radius: 20px 20px 20px 20px;
+}
+
+#thumbsbutton:hover {
+	opacity: 0.8;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+body.background-image1 {
+    background-image: url('background1.jpg'); 
+    background-size: cover;
+}
+
+body.background-image2 {
+    background-image: url('background2.jpg');
+    background-size: cover;
+}
+
+body.background-image3 {
+    background-image: url('background3.jpg');
+    background-size: cover;
+}
